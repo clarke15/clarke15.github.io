@@ -1,0 +1,227 @@
+/* universal styles */
+* { 
+  box-sizing: border-box;
+}
+
+html {    
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size:16px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgb(82, 82, 82);
+    background-color: aliceblue;
+}
+
+
+/* h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255,255,255);
+  }
+
+.image-container {
+    overflow: hidden;
+  }
+  
+.image-container img {
+    display: block;
+    max-width: 100%;
+  } */
+
+ol, ul {
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/* header */
+
+
+
+.navbar {
+  z-index: 9999;
+  font-size: 1rem;
+  line-height: 1.7;
+  position: fixed;
+  inset: 0% 0% auto;
+  border-bottom: solid #b7b7b7ad;
+  height: 8rem;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  flex:1;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden; /* Ensure content is hidden when height is reduced */
+}
+
+.navbar.expanded {
+  height: 300px; /* Adjust this value to fit the login form */
+}
+
+.navbar .navbar-inner {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+header .logo {
+  font-size: 2rem; 
+}
+
+
+header .desktop {
+  display: flex;
+  justify-content: center;
+  padding:0;
+  margin:0; 
+}
+
+
+header .desktop ul {
+    display: flex;
+    /* gap: 5%; */
+    } 
+
+header .desktop ul li {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  } 
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
+/* --- Log-in ---  */
+
+/* Originally it is hidden. The revealLogIn function when clicked reveals it */
+
+.log-in {
+  display: none; /* Initially hidden */
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.navbar.expanded .log-in {
+  display: block; /* Show when navbar is expanded */
+}
+
+.log-in form {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.log-in button {
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.log-in button:hover {
+  background-color: #555;
+}
+
+
+/* Financial Analysis Banners */
+
+main {
+    margin-top: 8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #4a4a4a; */
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.product {
+  display: flex;
+  /* flex: 1;  */
+  margin: 5% 10%;
+  border: solid grey;
+  border-radius: 3%;
+  /* height: 30rem; */
+}
+
+main .analysis .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 0% 1%;
+}
+
+

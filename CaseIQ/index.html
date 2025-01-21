@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>CaseIQ</title>
+        <link rel="stylesheet" href="./resources/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class = "navbar-inner">
+                    <a href="index.html" class="logo">CaseIQ</a>
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class= "log-in-button">Log in</li>
+                        </ul>
+                    </nav>
+                    <nav class="mobile">
+                        <ul>
+                            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+                            <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
+                            <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
+                            <li class="log-in-button">Log in</li>
+                        </ul> 
+                    </nav>
+                </div>
+                
+                <!-- Log in - this may end up as a different page -->
+                <div class = "log-in">
+                    <form action = "" method = "post">
+                        <input type="text" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Log in</button>
+                    </form>
+                </div>
+            </div>
+            
+        </header>
+
+        <main>
+            <!-- Intro text -->
+            <div class = "intro">
+                 <h1 class ="bold"> Streamline research. </h1>
+                 <h2> AI powered analytics tools, across all UK companies. </h2>
+            </div>
+            <!-- Products/Solutions -->
+            
+            <!-- Financial Analysis -->
+            <div class = "solutions">
+                <div class = "analysis product">
+                    <div class = "content">
+                        <h2 class = "title"> Financial Analysis </h2>
+                        <h3>Companies House has an <span class = "bold"> enormous </span> amount of information on UK companies, 
+                            but in unstructured formats.
+                            CaseIQ provides a lense across companies, years, industries, financial metrics. You name it.
+                        </h3>
+                    </div>
+                    <div class ="image-container">
+                        <img src = "./resources/images/graph.png" alt = "Graph">
+                    </div>
+                </div>
+                <!-- GeoLocater -->
+                <div class = "geo product">
+                    <div class = "content">
+                        <h2 class = "title"> GeoLocater </h2>
+                        <h3>Group companies by location, industry, size, and more. 
+                            Understand the distribution of companies across the UK.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Scripts -->
+            <script src ="./dynamic.js"></script>
+        </main>
+    </body>
+
+</html>
