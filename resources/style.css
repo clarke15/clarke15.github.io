@@ -17,6 +17,11 @@ body {
     font-family: "Noto Sans", sans-serif;
     color: rgb(82, 82, 82);
     background-color: aliceblue;
+    background-image: './images.astronomyBackground.webp'
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
